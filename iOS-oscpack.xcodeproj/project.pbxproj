@@ -29,7 +29,7 @@
 		3C01B4AB18DA1E730044D432 /* OscReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C01B48318DA1E730044D432 /* OscReceivedElements.cpp */; };
 		3C01B4AC18DA1E730044D432 /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C01B48518DA1E730044D432 /* OscTypes.cpp */; };
 		3C01B4AD18DA1E730044D432 /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C01B48518DA1E730044D432 /* OscTypes.cpp */; };
-		3C01B4C518DB77310044D432 /* OSCPack.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C01B45F18DA1DB70044D432 /* OSCPack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C01B4C518DB77310044D432 /* OSCPack.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C01B45F18DA1DB70044D432 /* OSCPack.h */; };
 		3C01B4CB18DB8FF90044D432 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C01B4C918DB8FF90044D432 /* GCDAsyncUdpSocket.h */; };
 		3C01B4CC18DB8FF90044D432 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C01B4CA18DB8FF90044D432 /* GCDAsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
@@ -249,8 +249,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C01B4C518DB77310044D432 /* OSCPack.h in Headers */,
 				3C01B4CB18DB8FF90044D432 /* GCDAsyncUdpSocket.h in Headers */,
+				3C01B4C518DB77310044D432 /* OSCPack.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +401,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kelly Fox";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -421,10 +422,12 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(OSCPACK_DIR)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OSCPACK_DIR = "$(SRCROOT)/Vendor/oscpack_1_1_0";
+				PROVISIONING_PROFILE = "1c132cd5-a7ed-4385-ab33-24763a2e8ca5";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
@@ -444,6 +447,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kelly Fox";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -458,9 +462,11 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(OSCPACK_DIR)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OSCPACK_DIR = "$(SRCROOT)/Vendor/oscpack_1_1_0";
+				PROVISIONING_PROFILE = "1c132cd5-a7ed-4385-ab33-24763a2e8ca5";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
